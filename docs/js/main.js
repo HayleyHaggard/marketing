@@ -1,6 +1,5 @@
 $(function () {
 
-
   window.addEventListener('scroll', () => {
     let scrollDistance = window.scrollY;
     document.querySelectorAll('.section').forEach((el, i) => {
@@ -21,8 +20,6 @@ $(function () {
       top = $(id).offset().top;
     $('body,html').animate({ scrollTop: top }, 1200);
   });
-
-
 
   AOS.init({
     disable: function () {
